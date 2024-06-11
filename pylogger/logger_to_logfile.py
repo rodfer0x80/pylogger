@@ -19,7 +19,7 @@ class LoggerToLogfile:
   def log(self, msg):
     return self.info(Error(msg))
 
-  def debug(msg):
+  def debug(self, msg):
     try:
       logger.debug(msg)
     except Exception as e:
